@@ -1,3 +1,22 @@
-# from django.db import models
+from django.db import models
 
-# Create your models here.
+
+class Video(models.Model):
+    """
+       This model holds video details fetched through the async service
+    """
+    yt_id = models.CharField(max_length=32, unique=True)
+    title = models.TextField()
+    description = models.TextField()
+    thumbnail_URL = models.URLField()
+    published_at = models.DateTimeField()
+
+    class Meta:
+        """
+        Indexing for quick retrieval of videos by youtube id and by publishing
+        date
+        """
+        indexes = [
+            models.Index(fields=['yt_id']),
+            models.Index(fields=['published_at'])
+        ]

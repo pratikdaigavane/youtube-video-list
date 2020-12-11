@@ -1,3 +1,6 @@
-# from django.contrib import admin
+from django.contrib import admin
 
-# Register your models here.
+# Registering Video Model
+from video.models import Video
+
+admin.site.register(Video)
