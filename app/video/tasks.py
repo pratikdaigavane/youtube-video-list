@@ -127,5 +127,4 @@ def sync_with_youtube():
                 current_api_key = api_keys[current_api_key_no + 1].key
                 return
             # if any other error
-            else:
-                logger.error('Unknown Error Occurred')
+            logger.error('Unknown Error Occurred')
