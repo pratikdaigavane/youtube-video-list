@@ -4,6 +4,10 @@
 
 API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
 
+<p align="center">
+    <img src="assets/drf.png" align="center" width="60%">
+</p>
+
 ## Features
  - Django Server used to build REST API
  - PEP-8 Coding guidelines followed
@@ -16,7 +20,9 @@ API to fetch latest videos sorted in reverse chronological order of their publis
    - APIs built using Django Rest Framework
 
 ## System Architecture
-<img src="assets/architecture.png" width="60%">
+<p align="center">
+<img src="assets/architecture.png" align="center" width="60%">
+</p>
 
 
 ## Prerequisites
