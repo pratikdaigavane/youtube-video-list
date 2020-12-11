@@ -123,3 +123,9 @@ STATIC_URL = '/static/'
 
 # Redis will act as message broker for celery
 CELERY_BROKER_URL = "redis://redis"
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination'
+                                '.PageNumberPagination',
+    'PAGE_SIZE': os.environ.get('PAGINATED_PAGE_SIZE')
+}

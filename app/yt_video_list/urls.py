@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework import permissions
 
 # Meta Data for Open API 3 Config
+
 schema_view = get_schema_view(
     openapi.Info(
         title="Youtube Videos List API",
@@ -36,5 +37,6 @@ urlpatterns = [
         schema_view.without_ui(cache_timeout=0), name='schema-json'),
     url(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0),
         name='schema-swagger-ui'),
+    path('videos/', include('video.urls')),
     path('admin/', admin.site.urls),
 ]
