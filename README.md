@@ -32,7 +32,7 @@ instructions refer: https://docs.docker.com/install/
 To run test cases:
 
 ```sh
-docker-compose run app sh -c "python manage.py flake8"
+docker-compose run app sh -c "flake8"
 ```
 ## Starting the Server
 
