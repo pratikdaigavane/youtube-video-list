@@ -24,9 +24,9 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Youtube Videos List API",
+        title="Youtube Video List API",
         default_version='v1',
-        description="Youtube Videos List API",
+        description="Youtube Video List API",
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),

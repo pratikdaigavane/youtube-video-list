@@ -8,7 +8,7 @@ class Video(models.Model):
     yt_id = models.CharField(max_length=32, unique=True)
     title = models.TextField()
     description = models.TextField()
-    thumbnail_URL = models.URLField()
+    thumbnail_url = models.URLField()
     published_at = models.DateTimeField()
 
     class Meta:
