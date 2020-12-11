@@ -7,3 +7,5 @@ API to fetch latest videos sorted in reverse chronological order of their publis
 ## Features
  - Django Server used to build REST API
  - PEP-8 Coding guidelines followed
+ - Containerized using Docker and managed using Docker Compose
+ - API Documentation using swagger 

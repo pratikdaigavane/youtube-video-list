@@ -49,13 +49,5 @@ services:
       - redis
     <<: *default-logging
 
-#  Dashboard
-  frontend:
-    image: flameslayer/yt-frontend
-    ports:
-    - "80:80"
-
-
-
 
 
