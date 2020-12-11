@@ -116,3 +116,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Redis will act as message broker for celery
+CELERY_BROKER_URL = "redis://redis"
