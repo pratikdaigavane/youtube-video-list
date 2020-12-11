@@ -7,4 +7,4 @@ from video.serializers import VideoSerializer
 class VideoList(generics.ListAPIView):
     """Endpoint that will list all videos in a paginated response"""
     serializer_class = VideoSerializer
-    queryset = Video.objects.all()
+    queryset = Video.objects.all().order_by('-published_at')

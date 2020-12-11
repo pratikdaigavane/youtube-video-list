@@ -129,3 +129,14 @@ REST_FRAMEWORK = {
                                 '.PageNumberPagination',
     'PAGE_SIZE': os.environ.get('PAGINATED_PAGE_SIZE')
 }
+
+# Youtube API Config
+YOUTUBE_API_SERVICE_NAME = 'youtube'
+YOUTUBE_API_VERSION = 'v3'
+
+CELERY_BEAT_SCHEDULE = {
+    "sample_task": {
+        "task": "video.tasks.sync_with_youtube",
+        "schedule": 10,
+    },
+}

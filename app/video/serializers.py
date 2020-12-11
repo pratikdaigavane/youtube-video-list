@@ -8,5 +8,5 @@ class VideoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Video
-        fields = '__all__'
-        ordering = ['-published_at']
+        fields = ['yt_id', 'published_at', 'title', 'description',
+                  'thumbnail_url', ]

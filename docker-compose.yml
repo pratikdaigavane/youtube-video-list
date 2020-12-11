@@ -34,11 +34,21 @@ services:
   #  Distributed Task Queue to perform periodic tasks
   celery:
     <<: *app
-    command: sh -c "celery -A yt_video_list worker --loglevel=info -B"
+    command: sh -c "celery -A yt_video_list worker --loglevel=info"
     ports: [ ]
     depends_on:
       - redis
     <<: *default-logging
+
+  #  Distributed Task Queue to perform periodic tasks
+  celery-beat:
+    <<: *app
+    command: sh -c "celery -A yt_video_list beat --loglevel=info"
+    ports: [ ]
+    depends_on:
+      - redis
+    <<: *default-logging
+
 
 
 
