@@ -5,8 +5,8 @@
 API to fetch latest videos sorted in reverse chronological order of their publishing date-time from YouTube for a given tag/search query in a paginated response.
 
 <p align=center>
-    <img src="assets/drf.png"  width="350">
-    <img src="assets/dashboard.png"  width="350">
+    <img src="assets/drf.png"  width="450">
+    <img src="assets/dashboard.png"  width="450">
 </p>
 
 
