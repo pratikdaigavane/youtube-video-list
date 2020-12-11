@@ -31,7 +31,7 @@ services:
     image: redis:alpine
     <<: *default-logging
 
-  #  Distributed Task Queue to perform periodic tasks
+  #  Distributed Task Queue Worker
   celery:
     <<: *app
     command: sh -c "celery -A yt_video_list worker --loglevel=info"
@@ -40,7 +40,7 @@ services:
       - redis
     <<: *default-logging
 
-  #  Distributed Task Queue to perform periodic tasks
+  #  Celery Beat
   celery-beat:
     <<: *app
     command: sh -c "celery -A yt_video_list beat --loglevel=info"
@@ -48,6 +48,12 @@ services:
     depends_on:
       - redis
     <<: *default-logging
+
+#  Dashboard
+  frontend:
+    image: flameslayer/yt-frontend
+    ports:
+    - "80:80"
 
 
 
