@@ -16,6 +16,7 @@ API to fetch latest videos sorted in reverse chronological order of their publis
    - APIs built using Django Rest Framework
 
 ## System Architecture
+![System Architecture](./assets/architecture.png "Logo Title Text 1")
 
 ## Prerequisites
 
