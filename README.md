@@ -1,4 +1,4 @@
-# youtube-video-list
+# Youtube Video List API
 [![CodeFactor](https://www.codefactor.io/repository/github/pratikdaigavane/youtube-video-list/badge)](https://www.codefactor.io/repository/github/pratikdaigavane/youtube-video-list)
 [![Django Build Status](https://github.com/pratikdaigavane/youtube-video-list/workflows/Django%20Test%20and%20Build/badge.svg)](https://github.com/PICT-ACM-Student-Chapter/OJ_API/actions)
 
