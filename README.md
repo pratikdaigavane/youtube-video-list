@@ -15,7 +15,7 @@ API to fetch latest videos sorted in reverse chronological order of their publis
  - API Documentation using swagger
  -  Asynchronous Service for fetching videos from Youtube using Celery
   - Admin Dashboard to view all videos in Database
-  - Github Action for lint and building docker image
+  - Github Action for linting and building docker image
   - Redis used as messaging broker and in-memory cache
    - APIs built using Django Rest Framework
 
@@ -38,7 +38,7 @@ instructions refer: https://docs.docker.com/install/
 To run test cases:
 
 ```sh
-docker-compose run app sh -c "python manage.py flake8"
+docker-compose run app sh -c "flake8"
 ```
 ## Starting the Server
 
