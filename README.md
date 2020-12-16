@@ -53,6 +53,8 @@ Then start whole project:
 docker-compose up
 ```
 
+> Then add API keys from admin panel at `/admin`. Default credentails are `admin:admin`
+
 ## Details of the Project
  - As soon as server starts, the synchronization service starts fetching videos in a fixed interval. The interval can be configured through `.env.sample` file.
   - The API to list videos will available at `http://127.0.0.1:8000`. This API is paginated and has `previous` and `next` url field.
